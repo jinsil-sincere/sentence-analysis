@@ -19,8 +19,8 @@ st.title('This is a new test')
 content = st.text_input('내가 지금 가장 듣고 싶은 말은?')
 if st.button('입력 완료'):
    with st.spinner('분석 중 입니다'):
-   result = llm.predict("내가 지금 제일 듣고 싶은 말은"+content+"이다 - 라는 응답에 대해 욕구 중심으로 정신역동적으로 해석해줘")
-   st.write(result)
+      result = llm.predict("내가 지금 제일 듣고 싶은 말은"+content+"이다 - 라는 응답에 대해 욕구 중심으로 정신역동적으로 해석해줘")
+      st.write(result)
 
 
 
@@ -29,5 +29,6 @@ if st.button('입력 완료'):
 
 # content = st.text_input('내가 가장 속상한 상황은?')
 # result = llm.predict("내가 가장 속상한 상황은"+content+"이다 - 라는 응답에 대해 욕구 중심으로 정신역동적으로 해석해줘")
+
 
 
