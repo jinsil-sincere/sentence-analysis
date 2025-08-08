@@ -3,18 +3,10 @@
 # pip install openai
 # pip install streamlit
 
-#%%
-from dotenv import load_dotenv
-import os
-from langchain_openai import ChatOpenAI
 
-load_dotenv()
-
-#%%
 import streamlit as st
 
-st.set_page_config(page_title='심리 분석 서비스', layout='wide')
-
+st.set_page_config(page_title='내 마음 분석 서비스', layout='wide')
 st.title('내 마음 분석 서비스')
 
 st.markdown(
@@ -106,3 +98,4 @@ if submit_clicked:
             except Exception as e:
                 st.error(f"분석 중 오류가 발생했습니다: {str(e)}")
                 st.info("API 키가 올바른지 확인해주세요.")
+
